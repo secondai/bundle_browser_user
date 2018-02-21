@@ -1,0 +1,11 @@
+{
+  "_id": "5a2784a19cb84d22ebce6352",
+  "type": "capability:0.0.1:local:187h78h23",
+  "data": {
+    "key": "IdentifyInitiate",
+    "version": "1.0.0"
+  },
+  "active": true,
+  "createdAt": 1512539297269,
+  "updatedAt": null
+}
