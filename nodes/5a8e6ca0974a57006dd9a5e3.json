@@ -1,0 +1,11 @@
+{
+  "_id": "5a8e6ca0974a57006dd9a5e3",
+  "nodeId": "5a8e6c9f974a57006dd9a5e1",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "Capability: IdentifyInitiate"
+  },
+  "active": true,
+  "createdAt": 1519283360695,
+  "updatedAt": null
+}
