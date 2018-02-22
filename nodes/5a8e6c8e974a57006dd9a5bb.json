@@ -1,0 +1,11 @@
+{
+  "_id": "5a8e6c8e974a57006dd9a5bb",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "tmp": "tmptest2",
+    "text": "Storing 'browser_developer' UI here"
+  },
+  "active": true,
+  "createdAt": 1519283342158,
+  "updatedAt": 1519321481207
+}
