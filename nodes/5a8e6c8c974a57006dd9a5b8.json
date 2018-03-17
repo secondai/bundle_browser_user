@@ -3,10 +3,10 @@
   "nodeId": "5a8e6c8c974a57006dd9a5b7",
   "type": "external_identity_connect_method:0.0.1:local:382989239hsdfmn",
   "data": {
-    "connection": "http://teacher.second.ngrok.io/ai",
-    "method": "http"
+    "method": "http",
+    "connection": "https://teacher.second.ngrok.io/ai"
   },
   "active": true,
   "createdAt": 1519283340868,
-  "updatedAt": null
+  "updatedAt": 1521247021928
 }
