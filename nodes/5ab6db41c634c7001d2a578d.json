@@ -1,0 +1,16 @@
+{
+  "_id": "5ab6db41c634c7001d2a578d",
+  "nodeId": "5a8e6c8e974a57006dd9a5bc",
+  "type": "react_component:0.0.1:local:98912hd89",
+  "data": {
+    "version": "1",
+    "note": "viewing a node chain, searching, etc.",
+    "internalId": "ViewNodeChainComponent",
+    "code": "(()=>{\n  return new Promise(async (resolve,reject)=>{\n    try {\n      \n      class ErrorComponent extends React.Component {\n        constructor(props){\n          super(props);\n        }\n        \n        render(){\n          return (\n            <div>\n              [ErrorRenderer]\n            </div>\n          )\n        }\n      }\n      \n      class ViewComponent extends React.Component {\n        constructor(props){\n          super(props);\n          this.state = {\n            \n          }\n        }\n        \n        componentDidMount(){\n        \n        }\n        componentWillUnmount(){\n        }\n        \n        render(){\n          \n          let node = this.props.node;\n          \n          return (\n            <div className=\"\">\n              \n              <h2 className=\"title is-4\">\n                {node.data.username}\n              </h2>\n              <h2 className=\"subtitle is-6\">\n                {node.data.apiAddress}\n              </h2>\n              \n            </div>\n          )\n        }\n      }\n      \n      ViewComponent = universe.ReactGlobalState(ViewComponent);\n      \n      resolve({\n        type: 'react_component:0.0.1:local:98912hd89',\n        data: ViewComponent\n      });\n      \n    }catch(err){\n      resolve({\n        ERROR: true, \n        err: err.toString()\n      });\n    }\n    \n  })\n\n  \n})()",
+    "key": "c765fe7f-eb8f-4cd5-b2ed-2ab442b3da8f",
+    "author": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcuXovU+RZy85KMqLakYSH1mdV\nWdpEUtgcXUyGyU5hVeTO7BkV/kxeC2upcxOwNnrBOdsvHI3nrrILgt90/hCSHKzx\nhOFLREorGoKtSEHxI7/SnzzlWtV3gT/IP5GVHIyvuJBx3hCti0dH55DZG8iMGZ2y\ncGpV73Dez3hHmeBh6wIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "active": true,
+  "createdAt": 1521933121401,
+  "updatedAt": 1521933596185
+}
