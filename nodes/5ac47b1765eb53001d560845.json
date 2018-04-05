@@ -1,0 +1,11 @@
+{
+  "_id": "5ac47b1765eb53001d560845",
+  "nodeId": "5ac47b1465eb53001d560842",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "ACTION: create a new RSA keypair and store locally"
+  },
+  "active": true,
+  "createdAt": 1522826007682,
+  "updatedAt": null
+}
