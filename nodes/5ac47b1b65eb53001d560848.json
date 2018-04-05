@@ -1,0 +1,11 @@
+{
+  "_id": "5ac47b1b65eb53001d560848",
+  "type": "capability:0.0.1:local:187h78h23",
+  "data": {
+    "version": "1.0.0",
+    "key": "rsa"
+  },
+  "active": true,
+  "createdAt": 1522826011525,
+  "updatedAt": null
+}
