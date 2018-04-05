@@ -1,0 +1,11 @@
+{
+  "_id": "5ac47adc65eb53001d560819",
+  "type": "external_identity:0.0.1:local:8982f982j92",
+  "data": {
+    "commonName": "teacher",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk8Ytv18WAt9OBd/ROdk6\nNxTRoVcIaT8hzQ5ZYBdxm70MDvFDi1QAqrDtbZQkRnzvLRv68wJDY0s34jA9SPcJ\nxUn0umfN6VZapjV5Vsw+DvzmsUYvcjXH+0GhSWcBUtbW7Y71vDsOwFei3g1lMEPA\ntKsk5xbC1791nqk2lb15NtWc7x1Md6sjxvNcL0MaNv1WkPWQDo5/TZ3L8qDhx087\nx7QuyzjnPlEuwLnMghi9DKmW8Agg5sCYcKwrCqAvcLF1j/4iy/2U6FTIcIBoYKnh\n/TSvqLvIcrdt5neL2jqvBbK/DQhN/qsP3GIiWe/kqaqWeoeYiu3Fnf+x2JDB+InN\nRwIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "active": true,
+  "createdAt": 1522825948723,
+  "updatedAt": null
+}
