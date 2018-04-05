@@ -1,0 +1,11 @@
+{
+  "_id": "5ac47b4265eb53001d56085e",
+  "nodeId": "5ac47b3b65eb53001d56085c",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "Capability: IdentifyActAsInternalUser"
+  },
+  "active": true,
+  "createdAt": 1522826050224,
+  "updatedAt": null
+}

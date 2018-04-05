@@ -1,0 +1,12 @@
+{
+  "_id": "5ac47add65eb53001d56081a",
+  "nodeId": "5ac47adc65eb53001d560819",
+  "type": "external_identity_connect_method:0.0.1:local:382989239hsdfmn",
+  "data": {
+    "method": "http",
+    "connection": "https://teacher.second.ngrok.io/ai"
+  },
+  "active": true,
+  "createdAt": 1522825949683,
+  "updatedAt": null
+}

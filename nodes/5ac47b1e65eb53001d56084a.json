@@ -1,0 +1,11 @@
+{
+  "_id": "5ac47b1e65eb53001d56084a",
+  "nodeId": "5ac47b1b65eb53001d560848",
+  "type": "text_tag:0.0.1:local:239fj23",
+  "data": {
+    "text": "Capability: rsa"
+  },
+  "active": true,
+  "createdAt": 1522826014491,
+  "updatedAt": null
+}

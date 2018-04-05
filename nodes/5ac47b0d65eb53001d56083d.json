@@ -1,0 +1,12 @@
+{
+  "_id": "5ac47b0d65eb53001d56083d",
+  "nodeId": "5ac47b0765eb53001d56083a",
+  "type": "code:0.0.1:local:32498h32f2",
+  "data": {
+    "key": "d1a7d985-f012-4555-a881-b1cd09431775",
+    "code": "(()=>{\n  \n  // This code handles an incoming \"run_action_sequence...\"\n  \n  // expcting a Node that specifies an array of actions to run! \n  // - this is useful when you want to include Authentication \n  //   - every command should include Auth+More \n  \n  \n  return new Promise(async (resolve,reject)=>{\n    try {\n      \n      // Display the \"SetupComponent\" or the \"MainComponent\" depending on if launched/ready \n      console.log('Display Setup or MainComponent?');\n      \n      // Find internal identity (if not exists, show setup) \n      try {\n        let newIdentityNode = await universe.loadAndRunCapability('Identity',{},{\n          type: 'standard_capability_action:0.0.1:local:298j291bs',\n          data: {\n            action: 'getPrivate',\n            options: {}\n          }\n        });\n        console.log('Got newIdentityNode', newIdentityNode);\n        if(newIdentityNode.data.error){\n          throw \"newIdentityNode Error\"\n        }\n        \n      }catch(err){\n        // should use setup component \n        console.log('NOT SETUP YET!');\n        \n        let result2 = await universe.searchMemory({\n          filter: {\n            sqlFilter: {\n              type: 'react_component:0.0.1:local:98912hd89',\n              data: {\n                internalId: 'SetupComponent'\n              }\n            }\n          }\n        });\n        let componentNode2 = await universe.runNodeCodeInVM({\n          codeNode: result2[0],\n          dataNode: {}\n        });\n        // let componentNode = await universe.runInVM(result[0],{});\n        \n        return resolve(componentNode2);\n        \n      }\n      \n      let result = await universe.searchMemory({\n        filter: {\n          sqlFilter: {\n            type: 'react_component:0.0.1:local:98912hd89',\n            data: {\n              internalId: 'MainComponent'\n            }\n          }\n        }\n      });\n      let componentNode = await universe.runNodeCodeInVM({\n        codeNode: result[0],\n        dataNode: {}\n      });\n      // let componentNode = await universe.runInVM(result[0],{});\n      \n      return resolve(componentNode);\n      \n    }catch(err){\n      resolve({ERROR: true, err: err.toString()});\n    }\n    \n  })\n\n  \n})()"
+  },
+  "active": true,
+  "createdAt": 1522825997629,
+  "updatedAt": null
+}
