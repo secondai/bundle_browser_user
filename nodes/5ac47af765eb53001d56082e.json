@@ -1,0 +1,25 @@
+{
+  "_id": "5ac47af765eb53001d56082e",
+  "nodeId": "5ac47ae265eb53001d56081e",
+  "type": "react_component:0.0.1:local:98912hd89",
+  "data": {
+    "version": "3",
+    "note": "MainMessagesComponent",
+    "key": "460aa2c2-fdc7-4553-9fde-e3b47c5045ec",
+    "code": "(()=>{\n  return new Promise(async (resolve,reject)=>{\n    try {\n      \n      const AceEditor = universe.AceEditor;\n      const ReactResizeDetector = universe.ReactResizeDetector;\n      const RecreateChildOnPropsChange = universe.RecreateChildOnPropsChange;\n      \n      const Link = universe.ReactRouterDomLink;\n      \n      class EmbeddedComponent extends React.Component {\n        constructor(props){\n          super(props);\n        }\n        \n        render(){\n          return (\n            <div>\n              embeddedComponenthere\n            </div>\n          )\n        }\n      }\n      \n      class ErrorComponent extends React.Component {\n        constructor(props){\n          super(props);\n        }\n        render(){\n          return (\n            <div>\n              ErrorLoading\n            </div>\n          )\n        }\n      }\n      \n      class mycomponent extends React.Component {\n        constructor(props){\n          super(props);\n          this.state = {\n            browserList: null,\n            remoteList: null,\n            mainEditor: null,\n            remoteFriendList: null,\n            remoteFriendDataList: null\n            // browser: null,\n          }\n        }\n        \n        componentDidMount(){\n          \n          console.log('Mounted MainMessagesComponent');\n          \n          return new Promise(async (resolve,reject)=>{\n            \n            let ExternalIdentityNodes = await universe.searchMemory({\n              filter: {\n                sqlFilter: {\n                  type: 'external_identity:0.0.1:local:8982f982j92',\n                  data: {\n                    commonName: 'main'\n                  }\n                }\n              }\n            });\n            let ExternalIdentityNode = ExternalIdentityNodes[0];\n            this.props.setState({\n              OwnerSecondExternalIdentityNode: ExternalIdentityNode\n            });\n              \n            \n            let remoteFriendList = await this.props.loadComponent({\n              internalId: 'MessagesListRemoteConnectedToComponent'\n            });\n            this.setState({\n              remoteFriendList\n            })\n            \n            \n          \n          });\n          \n          \n        }\n        \n        \n        render(){\n          \n          const MessagesRemoteFriendListComponent = this.state.remoteFriendList || ErrorComponent;\n          \n          return (\n            <div className=\"flex-main\">\n              <div className=\"flex-left\" style={{padding:'4px'}}>\n                \n                {/* \n                All Friends \n                */}\n                <div>\n                  <MessagesRemoteFriendListComponent />\n                </div>\n                \n              </div>\n              <div className=\"flex-middle\">\n                \n                Thread\n                \n              </div>\n              \n            </div>\n          )\n        }\n      }\n      \n      mycomponent = universe.ReactGlobalState(mycomponent);\n      mycomponent = universe.ReactHelpers(mycomponent);\n      \n      \n      resolve({\n        type: 'react_component:0.0.1:local:98912hd89',\n        data: mycomponent\n      });\n      \n    }catch(err){\n      reject({\n        ERROR: true, \n        err: err.toString()\n      });\n    }\n    \n  })\n\n  \n})()",
+    "internalId": "MainMessagesComponent",
+    "nodeChainNode": {
+      "type": "node_chain_info:0.0.1:local:3298h92",
+      "data": {
+        "apiAddress": "https://api.getasecond.com",
+        "network": "test",
+        "username": "dev@second",
+        "pubKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBNnFC2kVynYCdh441NxFqB2TV\nKTYZPPZgMfSdqrdCOAFq3g0W2TmvSzS2qY43DV80tpzzENi4bnOkOUFVl9Xi553C\n++hdnqg+pAGbT9P3Cr7r6CN1ZNBPx8JXnyWNfxzNhi+rCma1EpZaoRHbVxTX170V\nW2qyoyZI8qG9rsqB7QIDAQAB\n-----END PUBLIC KEY-----"
+      }
+    },
+    "author": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcuXovU+RZy85KMqLakYSH1mdV\nWdpEUtgcXUyGyU5hVeTO7BkV/kxeC2upcxOwNnrBOdsvHI3nrrILgt90/hCSHKzx\nhOFLREorGoKtSEHxI7/SnzzlWtV3gT/IP5GVHIyvuJBx3hCti0dH55DZG8iMGZ2y\ncGpV73Dez3hHmeBh6wIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "active": true,
+  "createdAt": 1522825975518,
+  "updatedAt": null
+}
